@@ -1,0 +1,18 @@
+{
+  // Extend the main project configuration so tests share the same paths
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // Include Jest and Node types for better autocompletion
+    "types": ["jest", "node"],
+    "noEmit": true,
+    "esModuleInterop": true
+  },
+  // Include test related files and helpers
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "jest.config.js",
+    "setupTests.ts",
+    "testUtils.ts"
+  ]
+}
